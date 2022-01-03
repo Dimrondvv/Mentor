@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+img {
+  padding-left: 20px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  font-size: 0.85rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+  margin: auto;
+  max-width: 375px;
+}
+
+.content {
+  display: flex;
+  flex: 0 1 75vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh 10vw;
+}
+
+.left {
+  padding: 40px 20px;
+  padding-bottom: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.left a {
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 0.85rem;
+}
+
+.left a:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.middle {
+  padding: 40px 20px;
+  padding-bottom: 50px;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.middle a {
+  text-decoration: none;
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 0.85rem;
+}
+
+.middle a:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.right {
+  padding: 40px 20px;
+  padding-bottom: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.right a {
+  text-decoration: none;
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 0.85rem;
+}
+
+.right a:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 25px;
+}
+
+/* Screen size 375 and more */
+@media (min-width: 375px) {
+  .content {
+    flex-flow: row;
+  }
+
+  .main {
+    height: 100px;
+  }
+
+  p {
+    display: inline-block;
+    width: 165px;
+    font-size: 0.5rem;
+    /* margin-left: 10px; */
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 15px;
+  }
+
+  .left {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .right {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+}
