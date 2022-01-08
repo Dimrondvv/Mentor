@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: -700px -625px, 150px 500px;
+  /* background-size: contain, contain; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.info {
+  margin-top: -40px;
+  line-height: 10px;
+  padding-bottom: 20px;
+}
+
+.headBackGround {
+  background: url(./images/bg-pattern-card.svg);
+  height: 140px;
+  width: 350px; /* 350px */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.userPhoto {
+  position: relative;
+  bottom: 50px;
+}
+
+.userPhoto img {
+  box-shadow: 0 0 0 5px white;
+  /* border: 5px solid aliceblue; */
+  border-radius: 50%;
+}
+
+.info p:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+}
+.info span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.info p:nth-of-type(2) {
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  line-height: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left {
+  padding-left: 3.5rem;
+}
+
+.right {
+  padding-right: 3.5rem;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.headingInfo {
+  text-align: center;
+  font-size: 0.7rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px -400px, 1000px 400px;
+    background-size: contain, contain;
+  }
+}
