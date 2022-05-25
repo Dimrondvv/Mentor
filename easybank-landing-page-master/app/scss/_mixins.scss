@@ -1,0 +1,30 @@
+// mixins between media query
+
+// Breakpoints
+ 
+@media (min-width: 64em) { // for media use em because it's the most consistent
+// 64em = 1024 / 16;
+// Styles go here
+}
+
+
+// Sass map 
+
+// medium - 640px, large - 1024px, xlarge - 1400px
+$breakpoints-up: ("medium" : "40em", "large" : "64em", "xlarge": "87.5em");
+
+// small-639px medium - 1023px, large - 1399px 
+$breakpoints-down: ("small": "39.9375em", "medium" : "63.9375em", "large" : "87.4375em");
+
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
